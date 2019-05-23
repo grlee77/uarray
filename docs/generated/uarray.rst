@@ -3,13 +3,13 @@ uarray
 
 .. automodule:: uarray
 
-   
-   
+
+
    .. rubric:: Functions
 
    .. autosummary::
       :toctree:
-   
+
       all_of_type
       create_multimethod
       generate_multimethod
@@ -17,27 +17,27 @@ uarray
       set_backend
       set_global_backend
       skip_backend
-   
-   
 
-   
-   
+
+
+
+
    .. rubric:: Classes
 
    .. autosummary::
       :toctree:
-   
-      Dispatchable
-   
-   
 
-   
-   
+      Dispatchable
+
+
+
+
+
    .. rubric:: Exceptions
 
    .. autosummary::
       :toctree:
-   
+
       BackendNotImplementedError
 
 
@@ -132,7 +132,7 @@ Addressing past flaws
 
 The progress on NumPy's side for defining an override mechanism has been slow, with
 NEP-13 being first introduced in 2013, and with the wealth of dispatchable objects
-(including arrays, ufuns and dtypes), and with the advent of libraries like Dask,
+(including arrays, ufuncs and dtypes), and with the advent of libraries like Dask,
 CuPy, Xarray, PyData/Sparse and XND, it has become clear that the need for alternative
 array-like implementations is growing. There are even other libraries like PyTorch, and
 TensorFlow that'd be possible to express in NumPy API-like terms. Another example

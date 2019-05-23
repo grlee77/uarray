@@ -34,11 +34,11 @@ is certainly helpful. We expect core API designers/specifiers to write the
 multimethods, and implementors to override them. But, as is often the case,
 similar people write both.
 
-Without further ado, here's an example multimethTrueod:
+Without further ado, here's an example multimethod:
 
 >>> import uarray as ua
 >>> def override_me(a, b):
-...   return Dispatchable(a, int),
+...   return ua.Dispatchable(a, int),
 >>> def override_replacer(args, kwargs, dispatchables):
 ...     return (dispatchables[0], args[1]), {}
 >>> overridden_me = ua.generate_multimethod(
